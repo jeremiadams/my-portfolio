@@ -328,7 +328,7 @@ useEffect(() => {
                         }
                         }}
                     >
-                        I am the bridge between <span>design</span> and a <span>scalable, accessible application.</span>
+                        I build highly <span>functional, accessible </span> web solutions. 
                     </motion.h2>
                 </div>
 
@@ -409,7 +409,7 @@ useEffect(() => {
                     }}
                     viewport={{ amount: 'some' }}
                 >
-                    I tell great stories of digital products through <span>design</span> and <span>implementation.</span>
+                    I am skilled at <span>designing</span> and <span>implementing</span> web applications. I strive every day to perfect my craft.
                 </motion.h1>
             </div>
         </section>
@@ -432,7 +432,7 @@ useEffect(() => {
                     }}
                     viewport={{ amount: 'some' }}
                     >
-                    I strive to creatively develop web applications, ensuring useful web experiences for users. I am passionate about creating products that help solve user needs through effective story telling and DRY code base.
+                    My goal is to use my creativity to develop web applications that offer meaningful and user-friendly experiences. I have a strong passion for accessibility & testing hence, I aim to create software that effectively meets every user's needs regardless of who uses it.
                     </motion.h1>
                     
                     <Link to="/about">
@@ -515,9 +515,9 @@ useEffect(() => {
         </section>
 
 
-        <Canvas className="canvas" gl={{ antialias: false }}>
+        {/* <Canvas className="canvas" gl={{ antialias: false }}>
           <Scene />
-        </Canvas>
+        </Canvas> */}
       </div>
     </>
     

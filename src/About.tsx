@@ -31,18 +31,28 @@ export default function About() {
                 </h1>
 
                 <h2>
-                    I LOVE PRETTY THINGS; OUTFITS, PEOPLE, LIFESTYLE, AND DIGITAL PRODUCTS. I WORK EVERY DAY TO PERFECT MY CRAFT IN  WEB DEVELOPMENT AND LIVE THE GOOD LIFE THE BEST WAY I CAN.
+                Creating software is a beautiful process, especially when it involves writing clean and reusable code, designing sleek user interfaces, and ensuring accessibility.
                 </h2>
 
                 <p>
-                    I am really passionate about solving complex problems and love to be part of a team that recognises the significance of critical thinking in the analysis of variants to provide solutions. I ensure projects I work on are scalable and the performance is thoroughly optimised. With an excellent eye for design and meticulous analysis, I provide pixel-perfect implementations and seamless user interfaces for the optimal experience. I also greatly utilise my critical thinking skills and knowledge of data structures and algorithms to ensure optimal solutions. I am also a great communicator and a tremendous team player. I have experience with JavaScript, specializing in ReactJS, NextJS, and TypeScript. I also have experience working with Tailwind CSS, SASS for designing. I strongly believe that the mind is our greatest tool and with the right mindset, anything is achievable so I am not shy of taking on a new challenge or adopting new technology.
+                    I really love solving complex problems and I love the process of building software from grassroot stages to seeing entire products formed. I aim to make sure that the projects I am involved in are scalable and that their performance is highly optimized. 
+                    <br/><br/>
+                    I possess an excellent eye for design, and I implement those designs with precision to create user interfaces that are seamless and provide the best possible experience for the user. 
+                    <br/><br/>
+                    I communicate greatly and enjoy collaborating with teams that value the importance of using critical thinking to develop solutions. 
+                    <br/><br/>
+                    My technical skills include experience working with HTML, CSS, JavaScript ES6, React.js and Next.js, TypeScript, SASS and Tailwind CSS.
+                    <br/><br/> 
+                    I strongly belief in continuous personal and professional development, and I am enthusiastic about incorporating this philosophy into my work. I have a passion for acquiring knowledge and integrating new and emerging technologies and concepts within the industry.
+                    <br/><br/>
+                    Aside from work, I play football (real-life and fifa) and I watch Formula 1.
                 </p>
             </div>
         </section>
 
         <section className="grid">
           <div className="content billboard__resume">
-            <a href="https://drive.google.com/file/d/1-aBlgStGRW9GsVWTb3hLGYN5NWj9M4Z6/view?usp=sharing" rel="noreferrer" target="_blank">View Resume</a>
+            <a href="https://drive.google.com/file/d/1_KvfgmUp3v3vB3IpL0PS3EEJSTaBkyR7/view?usp=sharing" rel="noreferrer" target="_blank">View Resume</a>
           </div>
         </section>
 
