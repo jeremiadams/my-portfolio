@@ -515,9 +515,9 @@ useEffect(() => {
         </section>
 
 
-        {/* <Canvas className="canvas" gl={{ antialias: false }}>
+        <Canvas className="canvas" gl={{ antialias: false }}>
           <Scene />
-        </Canvas> */}
+        </Canvas>
       </div>
     </>
     
