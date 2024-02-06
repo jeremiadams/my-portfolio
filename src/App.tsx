@@ -9,6 +9,7 @@ import Eshopa from './Eshopa.tsx'
 import Werb from './Werb.tsx'
 import Quizzical from './Quizzical.tsx'
 import Footer from "./Footer.tsx";
+import Improdds from './Improdds.tsx';
 
 
 import ScrollToTop from './scrollToTop.tsx'
@@ -82,6 +83,16 @@ export default function App() {
             <>
               <ScrollToTop />
               <Coinfundr />
+            </>
+          }
+        />
+
+        <Route 
+          path="/projects/improdds"
+          element={
+            <>
+              <ScrollToTop />
+              <Improdds />
             </>
           }
         />

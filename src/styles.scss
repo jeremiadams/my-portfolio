@@ -492,7 +492,7 @@ a,a:active,a:visited {
       position: relative;
       z-index: 6;
       filter: saturate(100%);
-      top: 50rem;
+      top: 46rem;
     }
 
     &__zigzag {
@@ -539,7 +539,7 @@ a,a:active,a:visited {
     &__text {
       grid-area: text;
       text-align: left;
-      padding-top: 12rem;
+      padding-top: 9rem;
       z-index: 7;
 
       h1 {
@@ -580,7 +580,7 @@ a,a:active,a:visited {
       position: relative;
       z-index: 6;
       filter: saturate(100%);
-      top: 50rem;
+      top: 46rem;
     }
 
     &__zigzag {
@@ -821,6 +821,7 @@ a,a:active,a:visited {
       line-height: 1.6;
       text-align: left;
       margin: 10rem 0;
+      padding-top: 2rem;
       color: rgba(255, 255, 255, 0.61);
     }
   
@@ -1079,7 +1080,7 @@ a,a:active,a:visited {
     font-weight: 700;
     text-decoration: underline !important;
     text-align: center;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     // padding-top: 1rem;
     // padding-bottom: 1rem; 
     cursor: url(./images/pointer-.svg), pointer !important;
@@ -1087,14 +1088,18 @@ a,a:active,a:visited {
 
   &-socials {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
 
     a {
       color: rgb(244, 239, 236);
       font-size: 2.4rem;
+
+      &:hover {
+        color:#FB5827
+      }
     }
   }
 
@@ -1112,7 +1117,7 @@ a,a:active,a:visited {
       font-weight: 700;
       text-decoration: underline;
       text-align: center;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       // padding-top: 1rem;
       // padding-bottom: 1rem; 
       cursor: url(./images/pointer-.svg), pointer;
@@ -1120,10 +1125,10 @@ a,a:active,a:visited {
 
     &-socials {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       padding-top: 2rem;
       display: flex;
-      justify-content: space-between;
+      gap: 20px;
   
       a {
         color: rgb(244, 239, 236);

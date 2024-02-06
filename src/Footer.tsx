@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className="grid footer">
             <div className="content footer__box">
                 <h3>Adamu J.</h3>
-                <p> 2022 © Jeremiah Adamu. All Rights Reserved.</p>
+                <p> 2024 © Jeremiah Adamu. All Rights Reserved.</p>
           </div>
         </footer>
     )

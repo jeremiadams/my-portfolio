@@ -70,7 +70,7 @@ export default function Werb() {
         <>
             <section className="grid project__page-title">
                 <div className="content">
-                    <h2>Werb - Web3 Dashboard & Chrome Extension</h2>
+                    <h2>Werb - Dashboard & Chrome Extension</h2>
                 </div>
             </section>
 
@@ -81,7 +81,7 @@ export default function Werb() {
                         <div className="project__page-tools">
                             <p>TOOLS: <span>REACT JS</span> <span>CSS</span></p>
                         </div>
-                        <p>Werb is a Chrome extension and a personal Dashboard I created to keep myself up to date with the latest web3 related articles and crypto prices. I designed it with Figma and built it with ReactJS. I utilised the newscatcher API for latest news articles and the coin ranking API for latest crypto prices.</p> 
+                        <p>Werb is a Chrome extension and a personal Dashboard I created to keep myself up to date with the latest news articles and crypto prices. I designed a concept with Figma and built it with ReactJS. I utilised thenewsapi.com API for latest news articles and the coin ranking API for latest crypto prices.</p> 
                         <div className="project__page-btns">
                             <a href="https://werb.netlify.app" target="_blank" rel="noreferrer" onMouseEnter={() => mouseEnter(1)} onMouseLeave={() => mouseLeave(1)}><p>View Application </p>
                                 <span>
@@ -89,13 +89,13 @@ export default function Werb() {
                                 </span>
                             </a>
 
-                            <a href="https://chrome.google.com/webstore/detail/werb-web3/obbmplbbplclkcfnbokhpdapejkjkpog" target="_blank" rel="noreferrer" onMouseEnter={() => mouseEnter(2)} onMouseLeave={() => mouseLeave(2)}><p>View Chrome Extension </p>
+                            <a href="https://chrome.google.com/webstore/detail/werb-web3/obbmplbbplclkcfnbokhpdapejkjkpog" target="_blank" rel="noreferrer" onMouseEnter={() => mouseEnter(2)} onMouseLeave={() => mouseLeave(2)}><p>View Extension </p>
                                 <span>
                                     {extensionImg}
                                 </span>
                             </a>
 
-                            <a href="https://www.figma.com/file/LYaZCZ0FVIb5iPLTgAbLy7/Web3-Chrome-Extension?node-id=0%3A1&t=8UqWNRZQqyZgnuZ4-1" target="_blank" rel="noreferrer" onMouseEnter={() => mouseEnter(3)} onMouseLeave={() => mouseLeave(3)}><p>View Design </p> 
+                            <a href="https://www.figma.com/file/LYaZCZ0FVIb5iPLTgAbLy7/Werb-Chrome-Extension?type=design&node-id=0%3A1&mode=design&t=jphVa2FHoqFIRM9l-1" target="_blank" rel="noreferrer" onMouseEnter={() => mouseEnter(3)} onMouseLeave={() => mouseLeave(3)}><p>View Design </p> 
                                 <span>
                                     {figmaImg}
                                 </span>

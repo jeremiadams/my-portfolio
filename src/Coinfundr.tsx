@@ -65,15 +65,60 @@ export default function Coinfundr() {
                         <div className="project__page-tools">
                             <p>TOOLS: <span>TYPESCRIPT</span> <span>NEXT JS</span> <span>WAGMI</span> <span>TAILWIND CSS</span> <span>MATERIAL UI</span> <span>FIREBASE</span></p>
                         </div>
-                        <p>Coinfundr is a web3 crowdfunding platform. Coinfundr provides individuals and charity organisations a seamless means of sending and recieving donations instantly. This project was created during the 2-week Polygon Bootcamp Africa 2022 Hackathon. I worked in a three man team creating the design for the web app and also implementing the design, components and pages for the application. I initiated the developement process by creating a design of the app on Figma during the first three days of the hackathon. After that, I joined the second frontend developer in building the various components of the app and assembling those components into pages using React(NextJs) and Material UI. Styling throughout the app was done with Tailwind CSS. Coinfundr came in <a rel="noreferrer" target="_blank" style={{color: "#9900ff"}} href="https://polygon.technology/blog/announcing-the-hackathon-winners-of-polygon-bootcamp-africa">6th runner-up</a> in the Beginner trrack of the Hackathon and we recieved a grant to help in the continuation of the project.</p> 
+
+                        <h4 className='project__page-heading-primary'>Overview:</h4>
+                        <p>Coinfundr, a web3 crowdfunding platform built on the Polygon framework, is a revolutionary approach to fundraising in the digital era. Functioning as the web3 equivalent of GoFundMe, Coinfundr empowers users to create and contribute to fundraisers seamlessly.</p> 
+                        
+
+                        <h4 className='project__page-heading'>Key Features:</h4>
+                        <ul>
+                            <li>
+                                <span className="project__page-text-bold">User-Created Fundraisers: </span>
+                                <span>Users can initiate fundraisers either "for self" or "for charity," providing details on the purpose, target amount, and personal information for individual fundraisers.</span>
+                            </li>
+                            <li>
+                                <span className="project__page-text-bold">Charitable Fundraisers: </span>
+                                <span>For charity-driven campaigns, users can choose from a list of predefined charities, set an amount, and create a fundraiser to support a cause.</span>
+                            </li>
+                            <li>
+                                <span className="project__page-text-bold">Search and Donate: </span>
+                                <span>A user-friendly search page allows anyone to explore existing fundraisers and contribute to their chosen causes effortlessly.</span>
+                            </li>
+                            <li>
+                                <span className="project__page-text-bold">Web3 Integration:  </span>
+                                <span>Extension to empower candidates with additional functionalities, including the ability to save job listings directly from external job sites and also a job ranking functionality. Candidates can bookmark interesting positions on the extension, and these saved jobs are accessible on their profile in the candidate dashboard.Users connect their Metamask wallet to Coinfundr, leveraging the power of web3 for secure transactions and interactions.</span>
+                            </li>
+                        </ul>
+
+
+                        <h4 className='project__page-heading'>Development Process:</h4>
+                        <p>I spearheaded the development process by taking the initiative to design the user interface using Figma. As part of a small team of three, I collaborated with another frontend developer to implement the design using NextJS and Tailwind CSS. I created multiple components and pages for the website to ensure a seamless and intuitive user experience.</p>
+
+
+                        <h4 className='project__page-heading'>Crypto Functionalities:</h4>
+                        <p>To handle crypto functionalities, we integrated the WAGMI library, streamlining wallet connections to Coinfundr and facilitating secure payments to other fundraisers.</p>
+                        
+                        
+                        <h4 className='project__page-heading'>Innovative Future Development - "Proof of Charity":</h4>
+                        <p>I proposed a groundbreaking concept called "Proof of Charity," where users who donate to a charity receive an NFT representing the cause they supported, named after Sustainable Development Goals (SDGs). For instance, donating to a charity addressing hunger might earn the user a "Zero Hunger" NFT. This innovative idea aimed to incentivize donations by partnering with organizations willing to provide discounts or royalties to individuals possessing specific SDG NFTs.</p>
+                        
+                        
+                        <h4 className='project__page-heading'>Challenges and Achievements:</h4>
+                        <p>Despite time constraints, our team thrived in a fast-paced environment, showcasing innovation in both design and functionality. Our efforts were rewarded with a <a rel="noreferrer" target="_blank" style={{color: "#9900ff"}} href="https://polygon.technology/blog/announcing-the-hackathon-winners-of-polygon-bootcamp-africa">6th runner-up</a> position in the Polygon Africa hackathon, securing a small grant for our project.</p>
+                        
+                        
+                        <h4 className='project__page-heading'>Future Roadmap:</h4>
+                        <p>Coinfundr holds immense potential for future development, especially with the "Proof of Charity" concept poised to create a meaningful impact. The vision includes collaboration with organizations, fostering a community where individuals with specific SDG NFTs receive exclusive benefits.</p>
+
+
                         <div className="project__page-btns">
-                            <a href="https://www.coinfundr.fund" onMouseEnter={() => mouseEnter(1)} onMouseLeave={() => mouseLeave(1)} rel="noreferrer" target="_blank"><p>View Application </p>
+                            <a href="https://www.coinfundr.app" onMouseEnter={() => mouseEnter(1)} onMouseLeave={() => mouseLeave(1)} rel="noreferrer" target="_blank"><p>Visit <br /> Coinfundr </p>
                                 <span>
                                     {webImg}
                                 </span>
                             </a>
 
-                            <a href="https://www.figma.com/file/oO4rYR52T7RBtuZtXsg6aY/Polygon-Hackaton?node-id=119%3A276&t=A6GsX9QFpJWMgUKh-1" onMouseEnter={() => mouseEnter(2)} onMouseLeave={() => mouseLeave(2)} rel="noreferrer" target="_blank"><p>View Design </p> 
+                            <a href="https://www.figma.com/file/oO4rYR52T7RBtuZtXsg6aY/Polygon-Hackaton?node-id=119%3A276&t=A6GsX9QFpJWMgUKh-1" onMouseEnter={() => mouseEnter(2)} onMouseLeave={() => mouseLeave(2)} rel="noreferrer" target="_blank"><p>View <br /> Design </p> 
                                 <span>
                                     {figmaImg}
                                 </span>

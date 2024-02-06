@@ -31,7 +31,7 @@ export default function About() {
                 </h1>
 
                 <h2>
-                Creating software is a beautiful process, especially when it involves writing clean and reusable code, designing sleek user interfaces, and ensuring accessibility.
+                Creating software is a beautiful process, especially when it involves writing clean and reusable code, implementing sleek user interfaces, and ensuring accessibility.
                 </h2>
 
                 <p>
@@ -52,7 +52,7 @@ export default function About() {
 
         <section className="grid">
           <div className="content billboard__resume">
-            <a href="https://drive.google.com/file/d/1_KvfgmUp3v3vB3IpL0PS3EEJSTaBkyR7/view?usp=sharing" rel="noreferrer" target="_blank">View Resume</a>
+            <a href="https://drive.google.com/file/d/1IC8Ux10K4ZlZXy_Fv3VQyubvgtse1wDQ/view?usp=sharing" rel="noreferrer" target="_blank">View Resume</a>
           </div>
         </section>
 

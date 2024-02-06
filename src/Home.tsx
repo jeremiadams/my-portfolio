@@ -7,6 +7,7 @@ import { degreesToRadians, progress, mix, easeInOut } from "popmotion";
 import { wrap } from "@motionone/utils";
 import HeroImg from './images/bitmoji.png'
 import RocketImg from './images/rocket.png'
+import ImproddsScreenshot from './images/improdds-.png'
 import CoinfundrScreenshot from './images/coinfundr-.png'
 import EshopaScreenshot from './images/eshopa-.png'
 import WerbScreenshot from './images/werb-.png'
@@ -213,26 +214,37 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 export default function Home(props) {
 
 
-  const buttonRef = useRef(null);
-  const textRef1 = useRef(null)
-  const textRef2 = useRef(null)
-  const textRef3 = useRef(null)
-  const textRef4 = useRef(null)
-  const arrowRef1 = useRef(null)
-  const arrowRef2 = useRef(null)
-  const arrowRef3 = useRef(null)
-  const arrowRef4 = useRef(null)
-  const screenshotRef1 = useRef(null)
-  const screenshotRef2 = useRef(null)
-  const screenshotRef3 = useRef(null)
-  const screenshotRef4 = useRef(null)
+  const buttonRef = useRef<any>(null);
+  const textRef0 = useRef<any>(null)
+  const textRef1 = useRef<any>(null)
+  const textRef2 = useRef<any>(null)
+  const textRef3 = useRef<any>(null)
+  const textRef4 = useRef<any>(null)
+  const arrowRef0 = useRef<any>(null)
+  const arrowRef1 = useRef<any>(null)
+  const arrowRef2 = useRef<any>(null)
+  const arrowRef3 = useRef<any>(null)
+  const arrowRef4 = useRef<any>(null)
+  const screenshotRef0 = useRef<any>(null)
+  const screenshotRef1 = useRef<any>(null)
+  const screenshotRef2 = useRef<any>(null)
+  const screenshotRef3 = useRef<any>(null)
+  const screenshotRef4 = useRef<any>(null)
   const { x, y } = useFollowPointer(buttonRef);
 
   const projectsRef = useRef(null)
   const contactRef = useRef(null)
 
   function mouseEnter(num) {
-    if (num === 1) {
+    if (num === 0) {
+      textRef0.current.style.transition = 'all .3s'
+      textRef0.current.style.transform = 'translateX(-10px)'
+      arrowRef0.current.style.transition = 'all .3s'
+      arrowRef0.current.style.transform = 'translateX(10px)'
+      screenshotRef0.current.style.transition = 'all .3s'
+      screenshotRef0.current.style.visibility = 'visible'
+      screenshotRef0.current.style.opacity = '1'
+    } else if (num === 1) {
       textRef1.current.style.transition = 'all .3s'
       textRef1.current.style.transform = 'translateX(-10px)'
       arrowRef1.current.style.transition = 'all .3s'
@@ -270,7 +282,12 @@ export default function Home(props) {
   }
 
   function mouseLeave(num) {
-    if (num === 1) {
+    if (num === 0) {
+      textRef0.current.style.transform = 'translateX(10px)'
+      arrowRef0.current.style.transform = 'translateX(-10px)'
+      screenshotRef0.current.style.visibility = 'hidden'
+      screenshotRef0.current.style.opacity = '0'
+    } else if (num === 1) {
       textRef1.current.style.transform = 'translateX(10px)'
       arrowRef1.current.style.transform = 'translateX(-10px)'
       screenshotRef1.current.style.visibility = 'hidden'
@@ -328,7 +345,7 @@ useEffect(() => {
                         }
                         }}
                     >
-                        I build highly <span>functional, accessible </span> web solutions. 
+                        I build highly <span>functional, user-friendly </span> web solutions. 
                     </motion.h2>
                 </div>
 
@@ -409,7 +426,7 @@ useEffect(() => {
                     }}
                     viewport={{ amount: 'some' }}
                 >
-                    I am skilled at <span>designing</span> and <span>implementing</span> web applications. I strive every day to perfect my craft.
+                    I am skilled at <span>designing</span> and <span>implementing</span> web applications. I write React conveniently. I strive every day to perfect my craft.
                 </motion.h1>
             </div>
         </section>
@@ -432,7 +449,7 @@ useEffect(() => {
                     }}
                     viewport={{ amount: 'some' }}
                     >
-                    My goal is to use my creativity to develop web applications that offer meaningful and user-friendly experiences. I have a strong passion for accessibility & testing hence, I aim to create software that effectively meets every user's needs regardless of who uses it.
+                    My goal is to use my creativity to develop web applications that offer meaningful and user-friendly experiences. I'm proficient in using frontend technologies to create responsive web applications. I possess a sharp eye for exceptional design and excel in collaborative environments.
                     </motion.h1>
                     
                     <Link to="/about">
@@ -464,6 +481,14 @@ useEffect(() => {
             <div className="projects__box">
                 <h1>Projects</h1>
 
+                <Link to="/projects/improdds">
+                  <div onMouseEnter={() => mouseEnter(0)} onMouseLeave={() => mouseLeave(0)} className="projects__chrome-extension projects__box-item">
+                      <h2 ref={textRef0} className="projects__text">Improdds</h2>
+                      <h2 ref={arrowRef0} className="projects__text">&rarr;</h2>
+                      <img alt="Improdds Logo" ref={screenshotRef0} src={ImproddsScreenshot}/> 
+                  </div>
+                </Link>
+
                 <Link to="/projects/coinfundr">
                   <div onMouseEnter={() => mouseEnter(1)} onMouseLeave={() => mouseLeave(1)} className="projects__chrome-extension projects__box-item">
                       <h2 ref={textRef1} className="projects__text">Coinfundr - Polygon Africa Hackathon 2022</h2>
@@ -482,19 +507,19 @@ useEffect(() => {
 
                 <Link to="/projects/werb">
                   <div onMouseEnter={() => mouseEnter(3)} onMouseLeave={() => mouseLeave(3)} className="projects__quizzical projects__box-item">
-                      <h2 ref={textRef3} className="projects__text">Werb - Web3 Dashboard & Chrome Extension</h2>
+                      <h2 ref={textRef3} className="projects__text">Werb - Dashboard & Chrome Extension</h2>
                       <h2 ref={arrowRef3} className="projects__text">&rarr;</h2>
                       <img alt="Werb Logo" ref={screenshotRef3} src={WerbScreenshot}/> 
                   </div>
                 </Link>
 
-                <Link to="/projects/quizzical">
+                {/* <Link to="/projects/quizzical">
                   <div onMouseEnter={() => mouseEnter(4)} onMouseLeave={() => mouseLeave(4)} className="projects__quizzical projects__box-item">
                       <h2 ref={textRef4} className="projects__text">Quizziapp - Quiz App</h2>
                       <h2 ref={arrowRef4} className="projects__text">&rarr;</h2>
                       <img alt="Quizzical app screenshot" ref={screenshotRef4} src={QuizzicalScreenshot}/> 
                   </div>
-                </Link>
+                </Link> */}
             </div>
         </section>
 
@@ -507,9 +532,8 @@ useEffect(() => {
             <div className="contact__prompt-box">
                 <div><a className="contact__prompt-email" href="mailto:jeremiadamss@gmail.com">Drop me a message!</a></div>
                 <div className="contact__prompt-socials">
-                    <div><a href="https://www.twitter.com/paramountjeremi" target="_blank">Twitter</a></div>
+                    <div><a href="https://www.linkedin.com/in/jeremiadams" target="_blank">Linkedin</a></div>
                     <div><a href="https://www.instagram.com/jeremiadams" target="_blank">Instagram</a></div>
-                    <div><a href="https://www.linkedin.com/in/jeremiadams" target="_blank">LinkedIn</a></div>
                 </div>
             </div>
         </section>
