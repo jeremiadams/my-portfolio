@@ -86,7 +86,7 @@ export default function Coinfundr() {
                             </li>
                             <li>
                                 <span className="project__page-text-bold">Web3 Integration:  </span>
-                                <span>Extension to empower candidates with additional functionalities, including the ability to save job listings directly from external job sites and also a job ranking functionality. Candidates can bookmark interesting positions on the extension, and these saved jobs are accessible on their profile in the candidate dashboard.Users connect their Metamask wallet to Coinfundr, leveraging the power of web3 for secure transactions and interactions.</span>
+                                <span>Users connect their Metamask wallet to Coinfundr, leveraging the power of web3 for secure transactions and interactions.</span>
                             </li>
                         </ul>
 
