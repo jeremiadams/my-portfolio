@@ -38,35 +38,43 @@ export const projects: Project[] = [
       ],
     },
     summary:
-      "An AI market-research platform for African markets — used by brands including Unilever, Tolaram and Glovo across 12+ countries. I’m the primary author of its three-app production monorepo.",
+      "An AI market-research platform used by companies including Unilever, Tolaram and Glovo across 12+ African markets — 380+ field agents, 24,000+ responses collected. I’m the primary author of its three production apps.",
     sections: [
       {
         heading: "What it is",
         body: [
-          "Wyza turns a plain-language research brief into a full study: AI-generated surveys, AI-moderated video interviews in 40+ languages, transcription, emotion and persona analysis, and automated reports that turn raw video responses into a board-ready deck in under 48 hours.",
-          "The platform is three Next.js apps sharing one monorepo — a research studio for brands, a respondent and field-agent app, and an admin terminal.",
+          "Wyza helps companies create research studies, recruit and manage respondents, run AI-moderated interviews and turn responses into reports: AI-generated surveys, interviews in 40+ languages, transcription, emotion and persona analysis, and automated reporting that turns raw responses into a presentation-ready report in under 48 hours.",
+          "The platform is three Next.js apps sharing one monorepo — a research studio for brands, a respondent and field-agent app, and an admin terminal. I contributed ~1,270 of 2,220 commits (~57%) in a three-person engineering team.",
         ],
       },
       {
-        heading: "What I own",
+        heading: "Product work I’m proud of",
         body: [
-          "I’ve contributed roughly 1,270 of 2,220 commits (~57% of the codebase) — more than twice the next contributor — spanning ~396 App Router API routes, row-level security policies, generated types and 30+ hand-written SQL migrations.",
-          "Long-running AI and video work can’t live inside serverless limits, so I architected the asynchronous side: BullMQ/Redis and pg-boss queues feeding a persistent Railway worker, with 17 scheduled jobs for stuck-job recovery, quota release and credit resets.",
+          "Researchers struggled to choose survey types, configure targeting and set up conditional logic — so I helped redesign the core survey-creation flow around a ChatGPT-style experience that turns a research brief into a structured survey and recommends audience targeting. We tested with 20 researchers before rollout; measured survey-creation time dropped by up to 70%, and multi-hour setup flows became minutes.",
+          "When Customer.io became too expensive, I replaced it with an internal lead-management workflow — sales-pipeline controls, demo-request alerts and Slack notifications built into the admin product — removing the subscription entirely, an estimated $8k saved over 8 months.",
+        ],
+      },
+      {
+        heading: "The engineering underneath",
+        body: [
+          "Long-running AI and video work can’t live inside serverless limits, so I architected the asynchronous side: BullMQ/Redis and pg-boss queues feeding persistent Railway workers, with recovery and scheduled jobs. This is the infrastructure behind Wyza’s 24,000+ lifetime responses.",
           "Payments run on dual rails — Stripe and Paystack — with webhook idempotency, a credits and wallet ledger, field-agent payouts, bank verification and KYC via BVN/Dojah.",
         ],
       },
       {
         heading: "AI as engineering practice",
         body: [
-          "I also built the team’s AI development infrastructure: version-controlled MCP server configuration so every developer’s assistant reads the real schema and real tickets, custom commands for architecture review and refactoring, a Figma design-token sync pipeline, and a spec-driven delivery loop that takes a Linear issue to an opened PR with one command.",
+          "I built /resolve-issue, a Claude-based workflow connected to Linear and GitHub through MCP. It has handled 150+ issues — from bug fixes to v1 features — automating much of the path from a written ticket to an opened PR, and gave the PM enough tooling to resolve lighter bugs without waiting on an engineer.",
+          "I also built Gandalf, an internal AI knowledge system used by all 18 team members: product work, sales context, tasks, meeting notes and project status in one place, automated team check-ins twice a day, and a daily project-health view for the CEO.",
         ],
       },
     ],
     highlights: [
+      "Survey-creation time cut by up to 70% after redesign",
+      "24,000+ responses, 380+ field agents, 12+ markets",
+      "150+ issues shipped through my AI issue-to-PR workflow",
       "~57% of a three-app production monorepo",
-      "~396 API routes, 30+ hand-written SQL migrations",
-      "Queue-backed AI/video pipeline on Railway workers",
-      "Dual payment rails with ledger, payouts and KYC",
+      "Internal build replaced Customer.io — ~$8k saved",
     ],
     links: [{ label: "Visit wyza.ai", href: "https://wyza.ai" }],
   },
@@ -94,7 +102,7 @@ export const projects: Project[] = [
       {
         heading: "What it is",
         body: [
-          "Ilimi generates structured course pathways, modules and adaptive quizzes from a single topic prompt — a learning platform where the curriculum builds itself around what you want to learn.",
+          "Ilimi turns a topic you want to learn into a persistent, structured course — pathways, modules, sections and adaptive quizzes generated from a single prompt. I built it after noticing that general-purpose AI chat gives useful answers but leaves knowledge scattered across disconnected chat histories.",
         ],
       },
       {
@@ -142,7 +150,7 @@ export const projects: Project[] = [
         heading: "What I built",
         body: [
           "The entire front end: candidate and recruiter dashboards, a dynamic calendar booking component, payment processing flow and REST API integration — translated from the product designer’s Figma into Next.js, TypeScript and Tailwind.",
-          "I also co-built v1.0 of the Improdds Job Analytics Chrome extension: candidates save job listings from external job sites and get a personalised rank score comparing their saved skills against the skills a listing requires.",
+          "I also co-built v1.0 of the Improdds Job Analytics Chrome extension, which analyses job listings against a user’s CV and returns a match score — helping candidates prioritise where to apply. The booking experience included the calendar logic to coordinate availability across users and time zones.",
         ],
       },
     ],
@@ -194,26 +202,27 @@ export const projects: Project[] = [
       ],
     },
     summary:
-      "A telehealth platform connecting patients with health professionals and facilities. I was a core contributor across its patient app, facility portal, organisation dashboard and embeddable booking widget.",
+      "A healthcare platform for finding and booking doctors and health facilities, with separate products for patients, providers, facilities and employers. I built across several of them.",
     sections: [
       {
-        heading: "The surface area",
+        heading: "What I built",
         body: [
-          "DrDoGood spans multiple production Next.js applications — the patient-facing web app, a health-facility portal and an organisation dashboard. I contributed ~250 commits and +69k lines across that multi-team codebase, as the third most active contributor on the flagship app.",
+          "The employer dashboard — the product experience companies used to provide healthcare to employees, monitor usage and understand insurance spend.",
+          "A facility-rating system that collected patient feedback on quality of care, giving DrDoGood a signal to rank better-performing facilities in search across a network of around 20 facilities.",
+          "An embeddable booking widget that let partner websites offer DrDoGood appointment booking directly inside their own products instead of redirecting patients elsewhere — a single drop-in bundle built under hard bundle-size and style-isolation constraints.",
         ],
       },
       {
-        heading: "The interesting constraint",
+        heading: "The platform work",
         body: [
-          "The booking widget had to be embeddable on partner sites as a single drop-in bundle — compiled through Parcel under hard bundle-size and style-isolation constraints, so the booking flow could live inside pages we didn’t control.",
-          "Core product work was booking, scheduling and dashboard interfaces over a Firebase-backed data layer, with Redux Toolkit state, error boundaries and analytics instrumentation.",
+          "I redesigned parts of the public website and product dashboards, and standardised reusable front-end components across the platform — reducing repeated UI work while collaborating with a part-time designer. Core interfaces ran over a Firebase-backed data layer with Redux Toolkit state, error boundaries and analytics instrumentation.",
         ],
       },
     ],
     highlights: [
-      "~250 commits across a multi-team production codebase",
-      "Embeddable widget under bundle-size constraints",
-      "Booking and scheduling UX over Firebase",
+      "Employer dashboard for healthcare usage and spend",
+      "Facility ratings that fed search ranking",
+      "Embeddable booking widget for partner sites",
     ],
   },
 ];
