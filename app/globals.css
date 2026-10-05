@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  /* clauaskee-derived core */
+  --color-periwinkle: #8e93ff;
+  --color-ink: #1a1a1a;
+  --color-neon: #47f654;
+
+  /* Jeremiah's earthy scale */
+  --color-black: #0a0908;
+  --color-jet: #22333b;
+  --color-cream: #eae0d5;
+  --color-khaki: #c6ac8f;
+  --color-stone: #5e503f;
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-periwinkle);
+  color: var(--color-ink);
+  font-family: var(--font-sans-body), ui-sans-serif, system-ui, sans-serif;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--color-neon);
+  color: var(--color-ink);
+}
