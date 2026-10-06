@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getProject, projects } from "@/lib/projects";
+import Slideshow from "@/components/Slideshow";
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -123,9 +124,20 @@ export default async function WorkPage({ params }: PageProps<"/works/[slug]">) {
         </div>
       </div>
 
-      {project.images && project.images.length > 0 && (
+      {(project.slideshow || (project.images && project.images.length > 0)) && (
         <div className="grid items-start gap-x-10 gap-y-14 px-5 pb-24 sm:px-10 md:grid-cols-2">
-          {project.images.map((img) => (
+          {project.slideshow && (
+            <figure>
+              <Slideshow
+                images={project.slideshow.frames}
+                className="mx-auto aspect-[1/2] w-full max-w-xs"
+              />
+              <figcaption className="mt-3 text-center text-lg text-khaki">
+                — {project.slideshow.caption}
+              </figcaption>
+            </figure>
+          )}
+          {project.images?.map((img) => (
             <figure
               key={img.src}
               className={img.half ? "" : "md:col-span-2"}

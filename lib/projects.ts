@@ -24,6 +24,8 @@ export type Project = {
     /** render at half width, side by side with the next half image */
     half?: boolean;
   }[];
+  /** auto-cycling phone-frame slideshow shown in the gallery, gif-style */
+  slideshow?: { caption: string; frames: { src: string; alt: string }[] };
 };
 
 export const projects: Project[
@@ -94,13 +96,16 @@ export const projects: Project[
         caption: "Wyza Poll — the respondent app where people earn rewards for sharing opinions",
         half: true,
       },
-      {
-        src: "/images/wyza-poll-mobile.jpg",
-        alt: "Wyza Poll on mobile",
-        caption: "Wyza Poll on mobile — most respondents answer from their phones",
-        half: true,
-      },
     ],
+    slideshow: {
+      caption: "The Wyza Poll mobile app (Expo / React Native) — onboarding and sign-in",
+      frames: [
+        { src: "/images/wyza-mobile-1.png", alt: "Wyza Poll mobile — take quick surveys" },
+        { src: "/images/wyza-mobile-2.png", alt: "Wyza Poll mobile — join brand communities" },
+        { src: "/images/wyza-mobile-3.png", alt: "Wyza Poll mobile — earn instant rewards" },
+        { src: "/images/wyza-mobile-4.png", alt: "Wyza Poll mobile — phone sign-in via WhatsApp or SMS" },
+      ],
+    },
   },
   {
     slug: "drdogood",
