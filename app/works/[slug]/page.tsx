@@ -126,17 +126,6 @@ export default async function WorkPage({ params }: PageProps<"/works/[slug]">) {
 
       {(project.slideshow || (project.images && project.images.length > 0)) && (
         <div className="grid items-start gap-x-10 gap-y-14 px-5 pb-24 sm:px-10 md:grid-cols-2">
-          {project.slideshow && (
-            <figure>
-              <Slideshow
-                images={project.slideshow.frames}
-                className="mx-auto aspect-[375/836] w-full max-w-xs"
-              />
-              <figcaption className="mt-3 text-center text-lg text-khaki">
-                — {project.slideshow.caption}
-              </figcaption>
-            </figure>
-          )}
           {project.images?.map((img) => (
             <figure
               key={img.src}
@@ -156,6 +145,17 @@ export default async function WorkPage({ params }: PageProps<"/works/[slug]">) {
               )}
             </figure>
           ))}
+          {project.slideshow && (
+            <figure>
+              <Slideshow
+                images={project.slideshow.frames}
+                className="mx-auto aspect-[375/836] w-full max-w-xs"
+              />
+              <figcaption className="mt-3 text-center text-lg text-khaki">
+                — {project.slideshow.caption}
+              </figcaption>
+            </figure>
+          )}
         </div>
       )}
     </main>
