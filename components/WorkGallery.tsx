@@ -13,12 +13,12 @@ const reveal = {
 
 export default function WorkGallery() {
   return (
-    <section id="work" className="bg-cream px-5 py-24 sm:px-10 sm:py-36">
+    <section id="work" className="bg-khaki px-5 py-24 sm:px-10 sm:py-36">
       <div className="grid gap-10 lg:grid-cols-[1fr_auto]">
         <h2 className="font-display leading-none text-black text-[16vw] lg:text-[12vw]">
           work.
         </h2>
-        <p className="max-w-xs self-end pb-4 text-lg leading-snug text-stone">
+        <p className="max-w-xs self-end pb-4 text-lg leading-snug text-ink/80">
           Four products I’ve helped ship — from an AI research platform to a
           Chrome extension. For deeper dives,{" "}
           <a
@@ -49,7 +49,7 @@ export default function WorkGallery() {
                 </span>
               </div>
               <h3 className="mt-5 text-xl text-black sm:text-2xl">{p.title}</h3>
-              <p className="text-lg text-stone">{p.descriptor}</p>
+              <p className="text-lg text-ink/70">{p.descriptor}</p>
             </Link>
           </motion.div>
         ))}

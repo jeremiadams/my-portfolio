@@ -23,7 +23,7 @@ export const projects: Project[] = [
     slug: "wyza",
     title: "Wyza",
     descriptor: "AI market research platform",
-    tile: { bg: "bg-jet", fg: "text-cream" },
+    tile: { bg: "bg-orange", fg: "text-ink" },
     meta: {
       role: "Lead Engineer",
       company: "WonderLabs",
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     slug: "ilimi",
     title: "Ilimi",
     descriptor: "AI learning platform — solo build",
-    tile: { bg: "bg-stone", fg: "text-cream" },
+    tile: { bg: "bg-jet", fg: "text-cream" },
     meta: {
       role: "Sole author",
       company: "Side project",
@@ -124,7 +124,7 @@ export const projects: Project[] = [
     slug: "improdds",
     title: "Improdds",
     descriptor: "Job-search platform + Chrome extension",
-    tile: { bg: "bg-khaki", fg: "text-black" },
+    tile: { bg: "bg-cream", fg: "text-ink" },
     meta: {
       role: "Sole frontend developer",
       company: "Improdds",
@@ -188,7 +188,7 @@ export const projects: Project[] = [
     slug: "drdogood",
     title: "DrDoGood",
     descriptor: "Telehealth across four apps",
-    tile: { bg: "bg-periwinkle", fg: "text-ink" },
+    tile: { bg: "bg-stone", fg: "text-cream" },
     meta: {
       role: "Frontend Developer",
       company: "DrDoGood",

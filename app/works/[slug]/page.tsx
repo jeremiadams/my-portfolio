@@ -25,7 +25,7 @@ export default async function WorkPage({ params }: PageProps<"/works/[slug]">) {
   if (!project) notFound();
 
   return (
-    <main className="bg-black text-cream">
+    <main className="bg-jet text-cream">
       <header className="flex min-h-[70svh] flex-col justify-end px-5 pb-16 pt-32 sm:px-10">
         <p className="mb-4 text-xl text-khaki">{project.descriptor}</p>
         <h1 className="max-w-5xl text-[13vw] font-semibold leading-[0.95] tracking-tight sm:text-[9vw]">
@@ -83,7 +83,7 @@ export default async function WorkPage({ params }: PageProps<"/works/[slug]">) {
               <ul className="space-y-3 text-xl">
                 {project.highlights.map((h) => (
                   <li key={h} className="flex gap-3">
-                    <span className="text-neon">→</span>
+                    <span className="text-orange">→</span>
                     {h}
                   </li>
                 ))}
@@ -99,7 +99,7 @@ export default async function WorkPage({ params }: PageProps<"/works/[slug]">) {
                   href={l.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full border-2 border-cream px-7 py-3 text-lg transition-colors hover:border-neon hover:bg-neon hover:text-ink"
+                  className="rounded-full border-2 border-cream px-7 py-3 text-lg transition-colors hover:border-orange hover:bg-orange hover:text-ink"
                 >
                   {l.label} ↗
                 </a>

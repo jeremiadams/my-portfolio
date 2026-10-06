@@ -29,7 +29,7 @@ export default function Bio() {
             {profile.socials.map((s, i) => (
               <span key={s.label}>
                 <a
-                  className="underline underline-offset-4 hover:text-cream"
+                  className="underline underline-offset-4 hover:text-orange"
                   href={s.href}
                   target="_blank"
                   rel="noreferrer"
@@ -43,7 +43,7 @@ export default function Bio() {
           <motion.a
             {...reveal}
             href={`mailto:${profile.email}`}
-            className="group inline-flex items-center gap-3 rounded-full border-2 border-ink px-8 py-4 text-xl font-medium transition-colors hover:bg-neon"
+            className="group inline-flex items-center gap-3 rounded-full border-2 border-ink px-8 py-4 text-xl font-medium transition-colors hover:bg-orange"
           >
             ¡Get in touch!
             <span className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5">

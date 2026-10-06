@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import StickerBadge from "@/components/StickerBadge";
 import Footer from "@/components/Footer";
+import Preloader from "@/components/Preloader";
 
 const display = Climate_Crisis({
   variable: "--font-display",
@@ -38,6 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${display.variable} ${sans.variable} antialiased`}>
       <body>
+        <Preloader />
         <Nav />
         <StickerBadge />
         {children}
