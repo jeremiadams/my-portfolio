@@ -8,6 +8,7 @@
   --color-khaki: #c6ac8f;
   --color-stone: #5e503f;
   --color-orange: #fb5827;
+  --color-amber: #f2ab27;
 
   --font-display: var(--font-display);
   --font-sans: var(--font-sans-body);
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-  background: var(--color-cream);
+  background: var(--color-amber);
   color: var(--color-ink);
   font-family: var(--font-sans-body), ui-sans-serif, system-ui, sans-serif;
   overflow-x: clip;

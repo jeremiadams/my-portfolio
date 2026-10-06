@@ -29,7 +29,7 @@ export default function WorkGallery() {
   }
 
   return (
-    <section id="work" className="bg-khaki px-5 py-24 sm:px-10 sm:py-36">
+    <section id="work" data-navtheme="light" className="bg-khaki px-5 py-24 sm:px-10 sm:py-36">
       <div className="grid gap-10 lg:grid-cols-[1fr_auto]">
         <h2 className="font-display leading-none text-black text-[16vw] lg:text-[12vw]">
           work.

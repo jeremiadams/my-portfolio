@@ -17,10 +17,17 @@ export type Project = {
   sections: { heading: string; body: string[] }[];
   highlights?: string[];
   links?: { label: string; href: string }[];
-  images?: { src: string; alt: string; caption?: string }[];
+  images?: {
+    src: string;
+    alt: string;
+    caption?: string;
+    /** render at half width, side by side with the next half image */
+    half?: boolean;
+  }[];
 };
 
-export const projects: Project[] = [
+export const projects: Project[
+  ] = [
   {
     slug: "wyza",
     title: "Wyza",
@@ -80,49 +87,62 @@ export const projects: Project[] = [
       "Internal build replaced Customer.io — ~$8k saved",
     ],
     links: [{ label: "Visit wyza.ai", href: "https://wyza.ai" }],
+    images: [
+      {
+        src: "/images/wyza-poll.jpg",
+        alt: "Wyza Poll respondent app",
+        caption: "Wyza Poll — the respondent app where people earn rewards for sharing opinions",
+        half: true,
+      },
+      {
+        src: "/images/wyza-poll-mobile.jpg",
+        alt: "Wyza Poll on mobile",
+        caption: "Wyza Poll on mobile — most respondents answer from their phones",
+        half: true,
+      },
+    ],
   },
   {
-    slug: "ilimi",
-    title: "Ilimi",
-    descriptor: "AI learning platform — solo build",
-    tile: { bg: "bg-jet", fg: "text-cream" },
-    cover: { src: "/images/ilimi.jpg", alt: "Ilimi homepage" },
+    slug: "drdogood",
+    title: "DrDoGood",
+    descriptor: "Telehealth across four apps",
+    tile: { bg: "bg-stone", fg: "text-cream" },
+    cover: { src: "/images/drdogood.jpg", alt: "DrDoGood public website" },
     meta: {
-      role: "Sole author",
-      company: "Side project",
-      year: "2024 —",
+      role: "Frontend Developer",
+      company: "DrDoGood",
+      year: "2025",
       stack: [
-        "Next.js 14 App Router",
+        "Next.js",
         "TypeScript",
-        "tRPC + Zod",
-        "Prisma + Neon Postgres",
-        "OpenAI",
-        "Paystack",
+        "Redux Toolkit",
+        "Firebase",
+        "Parcel (widget build)",
       ],
     },
     summary:
-      "A full-stack AI product built end to end by one person: give it a topic, and it generates a structured course pathway with modules, sections and adaptive quizzes.",
+      "A healthcare platform for finding and booking doctors and health facilities, with separate products for patients, providers, facilities and employers. I built across several of them.",
     sections: [
       {
-        heading: "What it is",
+        heading: "What I built",
         body: [
-          "Ilimi turns a topic you want to learn into a persistent, structured course — pathways, modules, sections and adaptive quizzes generated from a single prompt. I built it after noticing that general-purpose AI chat gives useful answers but leaves knowledge scattered across disconnected chat histories.",
+          "The employer dashboard — the product experience companies used to provide healthcare to employees, monitor usage and understand insurance spend.",
+          "A facility-rating system that collected patient feedback on quality of care, giving DrDoGood a signal to rank better-performing facilities in search across a network of around 20 facilities.",
+          "An embeddable booking widget that let partner websites offer DrDoGood appointment booking directly inside their own products instead of redirecting patients elsewhere — a single drop-in bundle built under hard bundle-size and style-isolation constraints.",
         ],
       },
       {
-        heading: "How it’s built",
+        heading: "The platform work",
         body: [
-          "A nine-model relational schema (pathways → modules → sections, quizzes → questions → options) sits behind end-to-end typed tRPC procedures with Zod validation.",
-          "Production concerns are shipped, not sketched: Kinde authentication, Paystack subscriptions with webhook handling, and Sentry monitoring across client, server and edge runtimes.",
+          "I redesigned parts of the public website and product dashboards, and standardised reusable front-end components across the platform — reducing repeated UI work while collaborating with a part-time designer. Core interfaces ran over a Firebase-backed data layer with Redux Toolkit state, error boundaries and analytics instrumentation.",
         ],
       },
     ],
     highlights: [
-      "Solo full-stack build — 65 commits, zero co-authors",
-      "Nine-model relational schema, end-to-end typed",
-      "Auth, subscriptions and monitoring in production",
+      "Employer dashboard for healthcare usage and spend",
+      "Facility ratings that fed search ranking",
+      "Embeddable booking widget for partner sites",
     ],
-    links: [{ label: "Visit ilimi.ai", href: "https://ilimi.ai" }],
   },
   {
     slug: "improdds",
@@ -190,45 +210,47 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "drdogood",
-    title: "DrDoGood",
-    descriptor: "Telehealth across four apps",
-    tile: { bg: "bg-stone", fg: "text-cream" },
+    slug: "ilimi",
+    title: "Ilimi",
+    descriptor: "AI learning platform — solo build",
+    tile: { bg: "bg-jet", fg: "text-cream" },
+    cover: { src: "/images/ilimi.jpg", alt: "Ilimi homepage" },
     meta: {
-      role: "Frontend Developer",
-      company: "DrDoGood",
-      year: "2025",
+      role: "Sole author",
+      company: "Side project",
+      year: "2024 —",
       stack: [
-        "Next.js",
+        "Next.js 14 App Router",
         "TypeScript",
-        "Redux Toolkit",
-        "Firebase",
-        "Parcel (widget build)",
+        "tRPC + Zod",
+        "Prisma + Neon Postgres",
+        "OpenAI",
+        "Paystack",
       ],
     },
     summary:
-      "A healthcare platform for finding and booking doctors and health facilities, with separate products for patients, providers, facilities and employers. I built across several of them.",
+      "A full-stack AI product built end to end by one person: give it a topic, and it generates a structured course pathway with modules, sections and adaptive quizzes.",
     sections: [
       {
-        heading: "What I built",
+        heading: "What it is",
         body: [
-          "The employer dashboard — the product experience companies used to provide healthcare to employees, monitor usage and understand insurance spend.",
-          "A facility-rating system that collected patient feedback on quality of care, giving DrDoGood a signal to rank better-performing facilities in search across a network of around 20 facilities.",
-          "An embeddable booking widget that let partner websites offer DrDoGood appointment booking directly inside their own products instead of redirecting patients elsewhere — a single drop-in bundle built under hard bundle-size and style-isolation constraints.",
+          "Ilimi turns a topic you want to learn into a persistent, structured course — pathways, modules, sections and adaptive quizzes generated from a single prompt. I built it after noticing that general-purpose AI chat gives useful answers but leaves knowledge scattered across disconnected chat histories.",
         ],
       },
       {
-        heading: "The platform work",
+        heading: "How it’s built",
         body: [
-          "I redesigned parts of the public website and product dashboards, and standardised reusable front-end components across the platform — reducing repeated UI work while collaborating with a part-time designer. Core interfaces ran over a Firebase-backed data layer with Redux Toolkit state, error boundaries and analytics instrumentation.",
+          "A nine-model relational schema (pathways → modules → sections, quizzes → questions → options) sits behind end-to-end typed tRPC procedures with Zod validation.",
+          "Production concerns are shipped, not sketched: Kinde authentication, Paystack subscriptions with webhook handling, and Sentry monitoring across client, server and edge runtimes.",
         ],
       },
     ],
     highlights: [
-      "Employer dashboard for healthcare usage and spend",
-      "Facility ratings that fed search ranking",
-      "Embeddable booking widget for partner sites",
+      "Solo full-stack build — 65 commits, zero co-authors",
+      "Nine-model relational schema, end-to-end typed",
+      "Auth, subscriptions and monitoring in production",
     ],
+    links: [{ label: "Visit ilimi.ai", href: "https://ilimi.ai" }],
   },
 ];
 

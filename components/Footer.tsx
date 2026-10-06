@@ -3,7 +3,7 @@ import { profile } from "@/lib/profile";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-jet text-cream">
+    <footer id="contact" data-navtheme="dark" className="bg-jet text-cream">
       <div className="flex flex-col justify-between gap-16 px-5 pb-16 pt-24 sm:flex-row sm:items-end sm:px-10 sm:pt-32">
         <p className="max-w-md text-xl leading-snug text-khaki">
           Open to frontend and full-stack roles on AI-driven products —

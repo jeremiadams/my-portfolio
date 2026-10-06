@@ -25,7 +25,7 @@ export default async function WorkPage({ params }: PageProps<"/works/[slug]">) {
   if (!project) notFound();
 
   return (
-    <main className="bg-jet text-cream">
+    <main data-navtheme="dark" className="bg-jet text-cream">
       <header className="relative flex min-h-[52svh] flex-col justify-end overflow-hidden px-5 pb-14 pt-28 sm:min-h-[70svh] sm:px-10 sm:pb-16 sm:pt-32">
         {project.cover && (
           <>
@@ -124,9 +124,12 @@ export default async function WorkPage({ params }: PageProps<"/works/[slug]">) {
       </div>
 
       {project.images && project.images.length > 0 && (
-        <div className="space-y-14 px-5 pb-24 sm:px-10">
+        <div className="grid items-start gap-x-10 gap-y-14 px-5 pb-24 sm:px-10 md:grid-cols-2">
           {project.images.map((img) => (
-            <figure key={img.src}>
+            <figure
+              key={img.src}
+              className={img.half ? "" : "md:col-span-2"}
+            >
               <Image
                 src={img.src}
                 alt={img.alt}

@@ -10,7 +10,10 @@ export default function Hero() {
   const base = loaderState.done ? 0.15 : LOADER_REVEAL;
 
   return (
-    <section className="flex h-svh flex-col justify-center overflow-hidden px-3">
+    <section
+      data-navtheme="light"
+      className="flex h-svh flex-col justify-center overflow-hidden px-3"
+    >
       <h1
         className="font-display text-center leading-none tracking-tight text-ink text-[12.5vw]"
         style={{ transform: "scaleY(1.5)" }}

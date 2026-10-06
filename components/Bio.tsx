@@ -12,7 +12,7 @@ const reveal = {
 
 export default function Bio() {
   return (
-    <section id="about" className="px-5 py-24 sm:px-10 sm:py-36">
+    <section id="about" data-navtheme="light" className="px-5 py-24 sm:px-10 sm:py-36">
       <div className="grid gap-16 lg:grid-cols-2">
         <div />
         <div className="max-w-2xl space-y-8 text-[clamp(1.35rem,2.2vw,1.9rem)] leading-snug">
