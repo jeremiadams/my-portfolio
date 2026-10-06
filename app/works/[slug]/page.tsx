@@ -130,7 +130,7 @@ export default async function WorkPage({ params }: PageProps<"/works/[slug]">) {
             <figure>
               <Slideshow
                 images={project.slideshow.frames}
-                className="mx-auto aspect-[1/2] w-full max-w-xs"
+                className="mx-auto aspect-[375/836] w-full max-w-xs"
               />
               <figcaption className="mt-3 text-center text-lg text-khaki">
                 — {project.slideshow.caption}

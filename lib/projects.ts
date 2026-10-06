@@ -91,6 +91,11 @@ export const projects: Project[
     links: [{ label: "Visit wyza.ai", href: "https://wyza.ai" }],
     images: [
       {
+        src: "/images/wyza-studio.jpg",
+        alt: "Wyza research studio — describe a research goal and get a study",
+        caption: "The research studio — a plain-language brief becomes a structured study (this redesign cut survey-creation time by up to 70%)",
+      },
+      {
         src: "/images/wyza-poll.jpg",
         alt: "Wyza Poll respondent app",
         caption: "Wyza Poll — the respondent app where people earn rewards for sharing opinions",
@@ -98,13 +103,12 @@ export const projects: Project[
       },
     ],
     slideshow: {
-      caption: "The Wyza Poll mobile app (Expo / React Native) — voice surveys, wallet and rewards",
+      caption: "Coins — the in-app rewards economy of the Wyza Poll mobile app (Expo / React Native)",
       frames: [
-        { src: "/images/wyza-app-home.jpg", alt: "Wyza Poll mobile — home with wallet balance and surveys" },
-        { src: "/images/wyza-app-voice-intro.jpg", alt: "Wyza Poll mobile — guided voice survey intro" },
-        { src: "/images/wyza-app-recording.jpg", alt: "Wyza Poll mobile — recording a voice response" },
-        { src: "/images/wyza-app-wallet.jpg", alt: "Wyza Poll mobile — wallet with earnings and withdrawals" },
-        { src: "/images/wyza-app-surveys.jpg", alt: "Wyza Poll mobile — available surveys list" },
+        { src: "/images/wyza-coins-overview.png", alt: "Coins arena — balance and reward history" },
+        { src: "/images/wyza-coins-welcome.png", alt: "Welcome to Coins — earn by completing surveys" },
+        { src: "/images/wyza-coins-spend.png", alt: "Coins arena — spend tab" },
+        { src: "/images/wyza-coins-gift.png", alt: "Send a gift — pick a Wyza user" },
       ],
     },
   },
