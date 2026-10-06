@@ -2,8 +2,10 @@ export type Project = {
   slug: string;
   title: string;
   descriptor: string;
-  /** Card tile colors on the home gallery */
+  /** Fallback tile colors when there is no cover image */
   tile: { bg: string; fg: string };
+  /** Cover shot: hover preview on the home list + dimmed header bg on the detail page */
+  cover?: { src: string; alt: string };
   meta: {
     role: string;
     company: string;
@@ -24,6 +26,7 @@ export const projects: Project[] = [
     title: "Wyza",
     descriptor: "AI market research platform",
     tile: { bg: "bg-orange", fg: "text-ink" },
+    cover: { src: "/images/wyza.jpg", alt: "Wyza homepage" },
     meta: {
       role: "Lead Engineer",
       company: "WonderLabs",
@@ -83,6 +86,7 @@ export const projects: Project[] = [
     title: "Ilimi",
     descriptor: "AI learning platform — solo build",
     tile: { bg: "bg-jet", fg: "text-cream" },
+    cover: { src: "/images/ilimi.jpg", alt: "Ilimi homepage" },
     meta: {
       role: "Sole author",
       company: "Side project",
@@ -125,6 +129,7 @@ export const projects: Project[] = [
     title: "Improdds",
     descriptor: "Job-search platform + Chrome extension",
     tile: { bg: "bg-cream", fg: "text-ink" },
+    cover: { src: "/images/improdds-cover.png", alt: "Improdds candidate dashboard" },
     meta: {
       role: "Sole frontend developer",
       company: "Improdds",

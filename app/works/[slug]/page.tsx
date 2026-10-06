@@ -26,11 +26,25 @@ export default async function WorkPage({ params }: PageProps<"/works/[slug]">) {
 
   return (
     <main className="bg-jet text-cream">
-      <header className="flex min-h-[70svh] flex-col justify-end px-5 pb-16 pt-32 sm:px-10">
-        <p className="mb-4 text-xl text-khaki">{project.descriptor}</p>
-        <h1 className="max-w-5xl text-[13vw] font-semibold leading-[0.95] tracking-tight sm:text-[9vw]">
-          {project.title}
-        </h1>
+      <header className="relative flex min-h-[52svh] flex-col justify-end overflow-hidden px-5 pb-14 pt-28 sm:min-h-[70svh] sm:px-10 sm:pb-16 sm:pt-32">
+        {project.cover && (
+          <>
+            <Image
+              src={project.cover.src}
+              alt=""
+              fill
+              priority
+              className="object-cover object-top opacity-40"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-jet via-jet/75 to-jet/40" />
+          </>
+        )}
+        <div className="relative">
+          <p className="mb-4 text-xl text-khaki">{project.descriptor}</p>
+          <h1 className="max-w-5xl text-[13vw] font-semibold leading-[0.95] tracking-tight sm:text-[9vw]">
+            {project.title}
+          </h1>
+        </div>
       </header>
 
       <div className="grid gap-14 border-t border-cream/15 px-5 py-16 sm:px-10 lg:grid-cols-[1fr_2fr]">
