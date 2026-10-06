@@ -98,12 +98,13 @@ export const projects: Project[
       },
     ],
     slideshow: {
-      caption: "The Wyza Poll mobile app (Expo / React Native) — onboarding and sign-in",
+      caption: "The Wyza Poll mobile app (Expo / React Native) — voice surveys, wallet and rewards",
       frames: [
-        { src: "/images/wyza-mobile-1.png", alt: "Wyza Poll mobile — take quick surveys" },
-        { src: "/images/wyza-mobile-2.png", alt: "Wyza Poll mobile — join brand communities" },
-        { src: "/images/wyza-mobile-3.png", alt: "Wyza Poll mobile — earn instant rewards" },
-        { src: "/images/wyza-mobile-4.png", alt: "Wyza Poll mobile — phone sign-in via WhatsApp or SMS" },
+        { src: "/images/wyza-app-home.jpg", alt: "Wyza Poll mobile — home with wallet balance and surveys" },
+        { src: "/images/wyza-app-voice-intro.jpg", alt: "Wyza Poll mobile — guided voice survey intro" },
+        { src: "/images/wyza-app-recording.jpg", alt: "Wyza Poll mobile — recording a voice response" },
+        { src: "/images/wyza-app-wallet.jpg", alt: "Wyza Poll mobile — wallet with earnings and withdrawals" },
+        { src: "/images/wyza-app-surveys.jpg", alt: "Wyza Poll mobile — available surveys list" },
       ],
     },
   },

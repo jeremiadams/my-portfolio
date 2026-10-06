@@ -31,7 +31,7 @@ export default function Slideshow({ images, interval = 2000, className }: Props)
           alt={img.alt}
           fill
           sizes="320px"
-          className={`object-cover transition-opacity duration-500 ${
+          className={`object-cover object-top transition-opacity duration-500 ${
             i === index ? "opacity-100" : "opacity-0"
           }`}
         />
