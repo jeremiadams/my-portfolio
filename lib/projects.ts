@@ -95,6 +95,21 @@ export const projects: Project[
         alt: "Wyza research studio — describe a research goal and get a study",
         caption: "The research studio — a plain-language brief becomes a structured study (this redesign cut survey-creation time by up to 70%)",
       },
+      {
+        src: "/images/wyza-chat.jpg",
+        alt: "Ask Wyza — the AI agent turns a brief into study goals through conversation",
+        caption: "Ask Wyza — the agent reads your brief, asks what it still needs, and writes the study goals",
+      },
+      {
+        src: "/images/wyza-guide.jpg",
+        alt: "The generated interview guide — 23 questions across screening, trust, switching and fees",
+        caption: "Minutes later: audience, screener and a 23-question interview guide, built section by section",
+      },
+      {
+        src: "/images/wyza-review.jpg",
+        alt: "Review & Launch — recruitment groups, quotas and screening checks",
+        caption: "Review & Launch — recruitment groups, quotas and screening rules checked before going live",
+      },
     ],
     slideshow: {
       caption: "The Wyza Poll mobile app (Expo / React Native) — onboarding, rewards, agent mode, coins and circles",
