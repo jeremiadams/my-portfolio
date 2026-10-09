@@ -13,7 +13,7 @@ import { useScroll, useTransform, type MotionValue } from "motion/react";
  */
 
 const COLOR = "#c6ac8f";
-const COUNT = 45;
+const COUNT = 70;
 const DEG = Math.PI / 180;
 const mix = (a: number, b: number, t: number) => a + (b - a) * t;
 
@@ -73,7 +73,7 @@ function Scene({ scrollYProgress }: { scrollYProgress: MotionValue<number> }) {
       {Array.from({ length: COUNT }, (_, i) => (
         <mesh key={i}>
           {/* degenerate sphere segments render as a little diamond */}
-          <sphereGeometry args={[0.13, 0.5, 0.05]} />
+          <sphereGeometry args={[0.18, 0.5, 0.05]} />
           <meshBasicMaterial
             wireframe
             color={COLOR}
