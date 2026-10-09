@@ -11,11 +11,11 @@ export default function Hero() {
 
   return (
     <section
-      data-navtheme="dark"
+      data-navtheme="light"
       className="flex h-svh flex-col justify-center overflow-hidden px-3"
     >
       <h1
-        className="font-display text-center leading-none tracking-tight text-cream text-[12.5vw]"
+        className="font-display text-center leading-none tracking-tight text-ink text-[12.5vw]"
         style={{ transform: "scaleY(1.5)" }}
       >
         {letters.map((ch, i) => (
