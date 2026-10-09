@@ -20,8 +20,8 @@ html {
 }
 
 body {
-  background: var(--color-mist);
-  color: var(--color-ink);
+  background: var(--color-jet);
+  color: var(--color-cream);
   font-family: var(--font-sans-body), ui-sans-serif, system-ui, sans-serif;
   overflow-x: clip;
 }

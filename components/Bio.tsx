@@ -12,7 +12,7 @@ const reveal = {
 
 export default function Bio() {
   return (
-    <section id="about" data-navtheme="light" className="px-5 py-24 sm:px-10 sm:py-36">
+    <section id="about" data-navtheme="dark" className="px-5 py-24 sm:px-10 sm:py-36">
       <div className="grid gap-16 lg:grid-cols-2">
         <div />
         <div className="max-w-2xl space-y-8 text-[clamp(1.35rem,2.2vw,1.9rem)] leading-snug">
@@ -43,7 +43,7 @@ export default function Bio() {
           <motion.a
             {...reveal}
             href={`mailto:${profile.email}`}
-            className="group inline-flex items-center gap-3 rounded-full border-2 border-ink px-8 py-4 text-xl font-medium transition-colors hover:bg-orange"
+            className="group inline-flex items-center gap-3 rounded-full border-2 border-cream px-8 py-4 text-xl font-medium transition-colors hover:border-orange hover:bg-orange hover:text-ink"
           >
             ¡Get in touch!
             <span className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
@@ -56,7 +56,7 @@ export default function Bio() {
       <div className="mt-28 grid grid-cols-2 gap-x-6 gap-y-14 sm:mt-40 lg:grid-cols-3">
         {indexColumns.map((col) => (
           <motion.div key={col.heading} {...reveal}>
-            <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-stone">
+            <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-khaki">
               {col.heading}
             </h3>
             <ul className="space-y-2 text-lg sm:text-xl">

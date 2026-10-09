@@ -10,7 +10,7 @@ import { useScroll, useTransform, type MotionValue } from "motion/react";
  * sphere, with the camera orbiting slowly over time and swinging with scroll.
  */
 
-const COLOR = "#5e503f";
+const COLOR = "#c6ac8f";
 const DEG = Math.PI / 180;
 const mix = (a: number, b: number, t: number) => a + (b - a) * t;
 
@@ -18,8 +18,8 @@ function Diamond({ p }: { p: number }) {
   const ref = useRef<THREE.Mesh>(null);
 
   useLayoutEffect(() => {
-    const distance = mix(0.5, 12, Math.random());
-    const yAngle = mix(90 * DEG, 120 * DEG, Math.random());
+    const distance = mix(3.5, 14, Math.random());
+    const yAngle = mix(65 * DEG, 130 * DEG, Math.random());
     const xAngle = 360 * DEG * p;
     ref.current!.position.setFromSphericalCoords(distance, yAngle, xAngle);
   }, [p]);
