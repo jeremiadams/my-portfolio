@@ -24,7 +24,6 @@ export const metadata: Metadata = {
   },
   description:
     "Frontend-focused engineer who goes full-stack on AI-driven products. 6+ years of React and Next.js; lead engineer on an AI market-research platform serving brands across 12+ African markets.",
-  icons: { icon: "/favicon.png" },
   openGraph: {
     title: "Jeremiah Adamu — Frontend engineer for AI products",
     description:
