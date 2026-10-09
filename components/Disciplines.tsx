@@ -10,7 +10,7 @@ export default function Disciplines() {
         </span>
       </Marquee>
       <Marquee baseVelocity={4} className="mt-6 sm:mt-10">
-        <span className="px-6 text-[11vw] leading-[1.15] sm:text-[7vw] text-cream">
+        <span className="px-6 text-[11vw] leading-[1.15] sm:text-[7vw] text-khaki">
           {marqueeLines[1]} —&nbsp;
         </span>
       </Marquee>
