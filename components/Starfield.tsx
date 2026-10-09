@@ -18,7 +18,7 @@ function Diamond({ p }: { p: number }) {
   const ref = useRef<THREE.Mesh>(null);
 
   useLayoutEffect(() => {
-    const distance = mix(0.5, 18.5, Math.random());
+    const distance = mix(0.5, 12, Math.random());
     const yAngle = mix(90 * DEG, 120 * DEG, Math.random());
     const xAngle = 360 * DEG * p;
     ref.current!.position.setFromSphericalCoords(distance, yAngle, xAngle);
@@ -27,14 +27,14 @@ function Diamond({ p }: { p: number }) {
   return (
     <mesh ref={ref}>
       {/* degenerate sphere segments render as a little diamond */}
-      <sphereGeometry args={[0.1, 0.5, 0.05]} />
-      <meshBasicMaterial wireframe color={COLOR} transparent opacity={0.8} />
+      <sphereGeometry args={[0.18, 0.5, 0.05]} />
+      <meshBasicMaterial wireframe color={COLOR} transparent opacity={0.55} />
     </mesh>
   );
 }
 
 function Scene({
-  numStars = 120,
+  numStars = 70,
   scrollYProgress,
 }: {
   numStars?: number;

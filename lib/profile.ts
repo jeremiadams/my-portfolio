@@ -28,20 +28,7 @@ export const bio = {
 export const indexColumns: { heading: string; items: string[] }[] = [
   {
     heading: "Experience",
-    items: ["WonderLabs", "DrDoGood", "Improdds", "RT Creative", "CerveApp"],
-  },
-  {
-    heading: "Selected brands",
-    items: [
-      "Unilever",
-      "Tolaram",
-      "Glovo",
-      "12+ African markets",
-      "Power Oil",
-      "PurpleMoney",
-      "sheCredit",
-      "Among others…",
-    ],
+    items: ["WonderLabs", "DrDoGood", "Improdds", "RT Creative"],
   },
   {
     heading: "Stack",

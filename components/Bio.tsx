@@ -53,7 +53,7 @@ export default function Bio() {
         </div>
       </div>
 
-      <div className="mt-28 grid grid-cols-2 gap-x-6 gap-y-14 sm:mt-40 lg:grid-cols-4">
+      <div className="mt-28 grid grid-cols-2 gap-x-6 gap-y-14 sm:mt-40 lg:grid-cols-3">
         {indexColumns.map((col) => (
           <motion.div key={col.heading} {...reveal}>
             <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-stone">
