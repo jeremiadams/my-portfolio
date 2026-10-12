@@ -50,13 +50,13 @@ export const projects: Project[
       ],
     },
     summary:
-      "An AI market-research platform used by companies including Unilever, Tolaram and Glovo across 12+ African markets, with 380+ field agents and 24,000+ responses collected. I’m the primary author of its three production apps.",
+      "An AI market-research platform used by companies including Unilever, Tolaram and Glovo across 6+ African markets, with 380+ field agents and 24,000+ responses collected. I’m the primary author of its three production apps.",
     sections: [
       {
         heading: "What it is",
         body: [
           "Wyza helps companies create research studies, recruit and manage respondents, run AI-moderated interviews and turn responses into reports: AI-generated surveys, interviews in 40+ languages, transcription, emotion and persona analysis, and automated reporting that turns raw responses into a presentation-ready report in under 48 hours.",
-          "The platform is three Next.js apps sharing one monorepo: a research studio for brands, a respondent and field-agent app, and an admin terminal. I contributed ~1,270 of 2,220 commits (~57%) in a three-person engineering team.",
+          "The platform is three Next.js apps sharing one monorepo: a research studio for brands, a respondent and field-agent app, and an admin terminal. I’m the primary author across all three, working in a three-person engineering team.",
         ],
       },
       {
@@ -83,9 +83,9 @@ export const projects: Project[
     ],
     highlights: [
       "Survey-creation time cut by up to 70% after redesign",
-      "24,000+ responses, 380+ field agents, 12+ markets",
+      "24,000+ responses, 380+ field agents, 6+ markets",
       "150+ issues shipped through my AI issue-to-PR workflow",
-      "~57% of a three-app production monorepo",
+      "Primary author of a three-app production monorepo",
       "Internal build replaced Customer.io (~$8k saved)",
     ],
     links: [{ label: "Visit wyza.ai", href: "https://wyza.ai" }],
