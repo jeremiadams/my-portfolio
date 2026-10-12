@@ -50,33 +50,33 @@ export const projects: Project[
       ],
     },
     summary:
-      "An AI market-research platform used by companies including Unilever, Tolaram and Glovo across 12+ African markets — 380+ field agents, 24,000+ responses collected. I’m the primary author of its three production apps.",
+      "An AI market-research platform used by companies including Unilever, Tolaram and Glovo across 12+ African markets, with 380+ field agents and 24,000+ responses collected. I’m the primary author of its three production apps.",
     sections: [
       {
         heading: "What it is",
         body: [
           "Wyza helps companies create research studies, recruit and manage respondents, run AI-moderated interviews and turn responses into reports: AI-generated surveys, interviews in 40+ languages, transcription, emotion and persona analysis, and automated reporting that turns raw responses into a presentation-ready report in under 48 hours.",
-          "The platform is three Next.js apps sharing one monorepo — a research studio for brands, a respondent and field-agent app, and an admin terminal. I contributed ~1,270 of 2,220 commits (~57%) in a three-person engineering team.",
+          "The platform is three Next.js apps sharing one monorepo: a research studio for brands, a respondent and field-agent app, and an admin terminal. I contributed ~1,270 of 2,220 commits (~57%) in a three-person engineering team.",
         ],
       },
       {
         heading: "Product work I’m proud of",
         body: [
-          "Researchers struggled to choose survey types, configure targeting and set up conditional logic — so I helped redesign the core survey-creation flow around a ChatGPT-style experience that turns a research brief into a structured survey and recommends audience targeting. We tested with 20 researchers before rollout; measured survey-creation time dropped by up to 70%, and multi-hour setup flows became minutes.",
-          "When Customer.io became too expensive, I replaced it with an internal lead-management workflow — sales-pipeline controls, demo-request alerts and Slack notifications built into the admin product — removing the subscription entirely, an estimated $8k saved over 8 months.",
+          "Researchers struggled to choose survey types, configure targeting and set up conditional logic, so I helped redesign the core survey-creation flow around a ChatGPT-style experience that turns a research brief into a structured survey and recommends audience targeting. We tested with 20 researchers before rollout; measured survey-creation time dropped by up to 70%, and multi-hour setup flows became minutes.",
+          "When Customer.io became too expensive, I replaced it with an internal lead-management workflow with sales-pipeline controls, demo-request alerts and Slack notifications built into the admin product, removing the subscription entirely at an estimated $8k saved over 8 months.",
         ],
       },
       {
         heading: "The engineering underneath",
         body: [
           "Long-running AI and video work can’t live inside serverless limits, so I architected the asynchronous side: BullMQ/Redis and pg-boss queues feeding persistent Railway workers, with recovery and scheduled jobs. This is the infrastructure behind Wyza’s 24,000+ lifetime responses.",
-          "Payments run on dual rails — Stripe and Paystack — with webhook idempotency, a credits and wallet ledger, field-agent payouts, bank verification and KYC via BVN/Dojah.",
+          "Payments run on dual rails, Stripe and Paystack, with webhook idempotency, a credits and wallet ledger, field-agent payouts, bank verification and KYC via BVN/Dojah.",
         ],
       },
       {
         heading: "AI as engineering practice",
         body: [
-          "I built /resolve-issue, a Claude-based workflow connected to Linear and GitHub through MCP. It has handled 150+ issues — from bug fixes to v1 features — automating much of the path from a written ticket to an opened PR, and gave the PM enough tooling to resolve lighter bugs without waiting on an engineer.",
+          "I built /resolve-issue, a Claude-based workflow connected to Linear and GitHub through MCP. It has handled 150+ issues, from bug fixes to v1 features, automating much of the path from a written ticket to an opened PR, and gave the PM enough tooling to resolve lighter bugs without waiting on an engineer.",
           "I also built Gandalf, an internal AI knowledge system used by all 18 team members: product work, sales context, tasks, meeting notes and project status in one place, automated team check-ins twice a day, and a daily project-health view for the CEO.",
         ],
       },
@@ -86,40 +86,40 @@ export const projects: Project[
       "24,000+ responses, 380+ field agents, 12+ markets",
       "150+ issues shipped through my AI issue-to-PR workflow",
       "~57% of a three-app production monorepo",
-      "Internal build replaced Customer.io — ~$8k saved",
+      "Internal build replaced Customer.io (~$8k saved)",
     ],
     links: [{ label: "Visit wyza.ai", href: "https://wyza.ai" }],
     images: [
       {
         src: "/images/wyza-studio.jpg",
-        alt: "Wyza research studio — describe a research goal and get a study",
-        caption: "The research studio — a plain-language brief becomes a structured study (this redesign cut survey-creation time by up to 70%)",
+        alt: "Wyza research studio: describe a research goal and get a study",
+        caption: "The research studio: a plain-language brief becomes a structured study (this redesign cut survey-creation time by up to 70%)",
       },
       {
         src: "/images/wyza-chat.jpg",
-        alt: "Ask Wyza — the AI agent turns a brief into study goals through conversation",
-        caption: "Ask Wyza — the agent reads your brief, asks what it still needs, and writes the study goals",
+        alt: "Ask Wyza, the AI agent that turns a brief into study goals through conversation",
+        caption: "Ask Wyza reads your brief, asks what it still needs, and writes the study goals",
       },
       {
         src: "/images/wyza-guide.jpg",
-        alt: "The generated interview guide — 23 questions across screening, trust, switching and fees",
+        alt: "The generated interview guide: 23 questions across screening, trust, switching and fees",
         caption: "Minutes later: audience, screener and a 23-question interview guide, built section by section",
       },
       {
         src: "/images/wyza-review.jpg",
-        alt: "Review & Launch — recruitment groups, quotas and screening checks",
-        caption: "Review & Launch — recruitment groups, quotas and screening rules checked before going live",
+        alt: "Review & Launch: recruitment groups, quotas and screening checks",
+        caption: "Review & Launch: recruitment groups, quotas and screening rules checked before going live",
       },
     ],
     slideshow: {
-      caption: "The Wyza Poll mobile app (Expo / React Native) — onboarding, rewards, agent mode, coins and circles",
+      caption: "The Wyza Poll mobile app (Expo / React Native): onboarding, rewards, agent mode, coins and circles",
       frames: [
-        { src: "/images/wyza-shot-splash.png", alt: "Wyza Poll — splash screen" },
-        { src: "/images/wyza-shot-goal.png", alt: "Onboarding — set your monthly earnings goal" },
-        { src: "/images/wyza-shot-xp.png", alt: "We found a survey for you — XP reward" },
-        { src: "/images/wyza-shot-agent.png", alt: "Agent mode dashboard — balance and sync progress" },
-        { src: "/images/wyza-shot-coins.png", alt: "Coins arena — balance, referrals and reward history" },
-        { src: "/images/wyza-shot-circles.png", alt: "Circle feed — community activity" },
+        { src: "/images/wyza-shot-splash.png", alt: "Wyza Poll splash screen" },
+        { src: "/images/wyza-shot-goal.png", alt: "Onboarding: set your monthly earnings goal" },
+        { src: "/images/wyza-shot-xp.png", alt: "We found a survey for you: XP reward" },
+        { src: "/images/wyza-shot-agent.png", alt: "Agent mode dashboard with balance and sync progress" },
+        { src: "/images/wyza-shot-coins.png", alt: "Coins arena: balance, referrals and reward history" },
+        { src: "/images/wyza-shot-circles.png", alt: "Circle feed community activity" },
       ],
     },
   },
@@ -147,15 +147,15 @@ export const projects: Project[
       {
         heading: "What I built",
         body: [
-          "The employer dashboard — the product experience companies used to provide healthcare to employees, monitor usage and understand insurance spend.",
+          "The employer dashboard: the product experience companies used to provide healthcare to employees, monitor usage and understand insurance spend.",
           "A facility-rating system that collected patient feedback on quality of care, giving DrDoGood a signal to rank better-performing facilities in search across a network of around 20 facilities.",
-          "An embeddable booking widget that let partner websites offer DrDoGood appointment booking directly inside their own products instead of redirecting patients elsewhere — a single drop-in bundle built under hard bundle-size and style-isolation constraints.",
+          "An embeddable booking widget that let partner websites offer DrDoGood appointment booking directly inside their own products instead of redirecting patients elsewhere. It ships as a single drop-in bundle built under hard bundle-size and style-isolation constraints.",
         ],
       },
       {
         heading: "The platform work",
         body: [
-          "I redesigned parts of the public website and product dashboards, and standardised reusable front-end components across the platform — reducing repeated UI work while collaborating with a part-time designer. Core interfaces ran over a Firebase-backed data layer with Redux Toolkit state, error boundaries and analytics instrumentation.",
+          "I redesigned parts of the public website and product dashboards, and standardised reusable front-end components across the platform, reducing repeated UI work while collaborating with a part-time designer. Core interfaces ran over a Firebase-backed data layer with Redux Toolkit state, error boundaries and analytics instrumentation.",
         ],
       },
     ],
@@ -189,14 +189,14 @@ export const projects: Project[
       {
         heading: "What it is",
         body: [
-          "Improdds (from “improve your odds”) connects candidates with experienced recruiters for resume optimisation, cover-letter crafting and negotiation advice — with an easy booking system that generates Google Meet sessions automatically.",
+          "Improdds (from “improve your odds”) connects candidates with experienced recruiters for resume optimisation, cover-letter crafting and negotiation advice, with an easy booking system that generates Google Meet sessions automatically.",
         ],
       },
       {
         heading: "What I built",
         body: [
-          "The entire front end: candidate and recruiter dashboards, a dynamic calendar booking component, payment processing flow and REST API integration — translated from the product designer’s Figma into Next.js, TypeScript and Tailwind.",
-          "I also co-built v1.0 of the Improdds Job Analytics Chrome extension, which analyses job listings against a user’s CV and returns a match score — helping candidates prioritise where to apply. The booking experience included the calendar logic to coordinate availability across users and time zones.",
+          "The entire front end: candidate and recruiter dashboards, a dynamic calendar booking component, payment processing flow and REST API integration, translated from the product designer’s Figma into Next.js, TypeScript and Tailwind.",
+          "I also co-built v1.0 of the Improdds Job Analytics Chrome extension, which analyses job listings against a user’s CV and returns a match score to help candidates prioritise where to apply. The booking experience included the calendar logic to coordinate availability across users and time zones.",
         ],
       },
     ],
@@ -233,7 +233,7 @@ export const projects: Project[
   {
     slug: "ilimi",
     title: "Ilimi",
-    descriptor: "AI learning platform — solo build",
+    descriptor: "Solo-built AI learning platform",
     tile: { bg: "bg-jet", fg: "text-cream" },
     cover: { src: "/images/ilimi.jpg", alt: "Ilimi homepage" },
     meta: {
@@ -255,7 +255,7 @@ export const projects: Project[
       {
         heading: "What it is",
         body: [
-          "Ilimi turns a topic you want to learn into a persistent, structured course — pathways, modules, sections and adaptive quizzes generated from a single prompt. I built it after noticing that general-purpose AI chat gives useful answers but leaves knowledge scattered across disconnected chat histories.",
+          "Ilimi turns a topic you want to learn into a persistent, structured course: pathways, modules, sections and adaptive quizzes generated from a single prompt. I built it after noticing that general-purpose AI chat gives useful answers but leaves knowledge scattered across disconnected chat histories.",
         ],
       },
       {
@@ -267,7 +267,7 @@ export const projects: Project[
       },
     ],
     highlights: [
-      "Solo full-stack build — 65 commits, zero co-authors",
+      "Solo full-stack build: 65 commits, zero co-authors",
       "Nine-model relational schema, end-to-end typed",
       "Auth, subscriptions and monitoring in production",
     ],
