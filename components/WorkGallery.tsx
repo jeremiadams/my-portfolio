@@ -35,7 +35,7 @@ export default function WorkGallery() {
           work.
         </h2>
         <p className="max-w-xs self-end pb-4 text-lg leading-snug text-ink/80">
-          Four products I’ve helped ship — from an AI research platform to a
+          Four products I’ve helped ship, from an AI research platform to a
           Chrome extension. For deeper dives,{" "}
           <a
             className="underline underline-offset-4"

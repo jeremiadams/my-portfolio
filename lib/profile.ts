@@ -19,8 +19,8 @@ export const bio = {
   intro:
     "Hi there! I’m Jeremiah Adamu, a frontend-focused engineer who goes full-stack on AI-driven products.",
   paragraphs: [
-    "I’ve spent 6+ years building production software across research, healthcare, hiring and education — the last stretch as lead engineer on Wyza, an AI market-research platform used by companies like Unilever, Tolaram and Glovo across 12+ African markets, with 380+ field agents and 24,000+ responses collected. I’m the primary author of its three production apps.",
-    "My home ground is the front end — interfaces that feel considered, fast and obvious to use (redesigning Wyza’s survey-creation flow cut setup time by up to 70%). But on AI products I own the whole path: model integrations, streaming, MCP tooling, and the queue-backed workers that keep long-running AI jobs honest. I also build the AI that builds the product — internal agents and workflows that have shipped 150+ issues and replaced whole subscriptions.",
+    "I’ve spent 6+ years building production software across research, healthcare, hiring and education, most recently as lead engineer on Wyza, an AI market-research platform used by companies like Unilever, Tolaram and Glovo across 12+ African markets, with 380+ field agents and 24,000+ responses collected. I’m the primary author of its three production apps.",
+    "My home ground is the front end: interfaces that feel considered, fast and obvious to use (redesigning Wyza’s survey-creation flow cut setup time by up to 70%). But on AI products I own the whole path: model integrations, streaming, MCP tooling, and the queue-backed workers that keep long-running AI jobs honest. I also build the AI that builds the product: internal agents and workflows that have shipped 150+ issues and replaced whole subscriptions.",
     "Away from the keyboard I play football (real-life and FIFA) and watch Formula 1.",
   ],
 };
