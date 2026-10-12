@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: "%s — Jeremiah Adamu",
   },
   description:
-    "Frontend-focused engineer who goes full-stack on AI-driven products. 6+ years of React and Next.js; lead engineer on an AI market-research platform serving brands across 12+ African markets.",
+    "Frontend-focused engineer who goes full-stack on AI-driven products. 6+ years of React and Next.js; lead engineer on an AI market-research platform serving brands across 6+ African markets.",
   openGraph: {
     title: "Jeremiah Adamu — Frontend engineer for AI products",
     description:
