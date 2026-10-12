@@ -11,19 +11,29 @@ const reveal = {
   transition: { duration: 0.7, ease: "easeOut" as const },
 };
 
-/** clauaskee-style reveal: content rises from behind a mask */
+/** clauaskee-style reveal: content rises from behind a mask.
+ * The observer watches the static wrapper, not the translated child,
+ * so the trigger can't be thrown off by the transform. */
 function Rise({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
   return (
-    <div className="overflow-hidden">
+    <motion.div
+      className="overflow-hidden"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <motion.div
-        initial={{ y: "110%" }}
-        whileInView={{ y: "0%" }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay }}
+        variants={{
+          hidden: { y: "110%" },
+          visible: {
+            y: "0%",
+            transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1], delay },
+          },
+        }}
       >
         {children}
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
 

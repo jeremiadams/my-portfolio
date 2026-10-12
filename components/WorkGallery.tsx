@@ -31,17 +31,25 @@ export default function WorkGallery() {
   return (
     <section id="work" data-navtheme="light" className="bg-khaki px-5 py-24 sm:px-10 sm:py-36">
       <div className="grid gap-10 lg:grid-cols-[1fr_auto]">
-        <div className="overflow-hidden">
+        <motion.div
+          className="overflow-hidden"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <motion.h2
-            initial={{ y: "70%" }}
-            whileInView={{ y: "0%" }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+            variants={{
+              hidden: { y: "70%" },
+              visible: {
+                y: "0%",
+                transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] },
+              },
+            }}
             className="font-display leading-none text-black text-[16vw] lg:text-[12vw]"
           >
             work.
           </motion.h2>
-        </div>
+        </motion.div>
         <p className="max-w-xs self-end pb-4 text-lg leading-snug text-ink/80">
           Four products I’ve helped ship, from an AI research platform to a
           Chrome extension. For deeper dives,{" "}
