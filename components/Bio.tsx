@@ -27,7 +27,7 @@ function Rise({ children, delay = 0 }: { children: ReactNode; delay?: number }) 
           hidden: { y: "110%" },
           visible: {
             y: "0%",
-            transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1], delay },
+            transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1], delay },
           },
         }}
       >
@@ -82,7 +82,7 @@ export default function Bio() {
 
       <div className="mt-28 grid grid-cols-2 gap-x-6 gap-y-14 sm:mt-40 lg:grid-cols-3">
         {indexColumns.map((col, i) => (
-          <Rise key={col.heading} delay={i * 0.08}>
+          <Rise key={col.heading} delay={i * 0.2}>
             <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-stone">
               {col.heading}
             </h3>
