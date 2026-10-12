@@ -1,5 +1,6 @@
 "use client";
 
+import { type ReactNode } from "react";
 import { motion } from "motion/react";
 import { bio, profile, indexColumns } from "@/lib/profile";
 
@@ -9,6 +10,22 @@ const reveal = {
   viewport: { once: true, amount: 0.3 },
   transition: { duration: 0.7, ease: "easeOut" as const },
 };
+
+/** clauaskee-style reveal: content rises from behind a mask */
+function Rise({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
+  return (
+    <div className="overflow-hidden">
+      <motion.div
+        initial={{ y: "110%" }}
+        whileInView={{ y: "0%" }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay }}
+      >
+        {children}
+      </motion.div>
+    </div>
+  );
+}
 
 export default function Bio() {
   return (
@@ -54,8 +71,8 @@ export default function Bio() {
       </div>
 
       <div className="mt-28 grid grid-cols-2 gap-x-6 gap-y-14 sm:mt-40 lg:grid-cols-3">
-        {indexColumns.map((col) => (
-          <motion.div key={col.heading} {...reveal}>
+        {indexColumns.map((col, i) => (
+          <Rise key={col.heading} delay={i * 0.08}>
             <h3 className="mb-5 text-sm font-semibold uppercase tracking-[0.18em] text-stone">
               {col.heading}
             </h3>
@@ -64,7 +81,7 @@ export default function Bio() {
                 <li key={item}>{item}</li>
               ))}
             </ul>
-          </motion.div>
+          </Rise>
         ))}
       </div>
     </section>
