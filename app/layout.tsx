@@ -17,7 +17,7 @@ const sans = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jeremicoded.com"),
+  metadataBase: new URL("https://www.jeremicoded.com"),
   title: {
     default: "Jeremiah Adamu — Frontend engineer for AI products",
     template: "%s — Jeremiah Adamu",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Jeremiah Adamu — Frontend engineer for AI products",
     description:
       "Frontend-focused engineer who goes full-stack on AI-driven products.",
-    url: "https://jeremicoded.com",
+    url: "https://www.jeremicoded.com",
     siteName: "jeremi.",
     type: "website",
   },
