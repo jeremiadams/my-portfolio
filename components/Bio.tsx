@@ -67,16 +67,25 @@ export default function Bio() {
               </span>
             ))}
           </motion.p>
-          <motion.a
-            {...reveal}
-            href={`mailto:${profile.email}`}
-            className="group inline-flex items-center gap-3 rounded-full border-2 border-ink px-8 py-4 text-xl font-medium transition-colors hover:border-orange hover:bg-orange"
-          >
-            ¡Get in touch!
-            <span className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
-              ↗
-            </span>
-          </motion.a>
+          <motion.div {...reveal} className="flex flex-wrap items-center gap-6">
+            <a
+              href={`mailto:${profile.email}`}
+              className="group inline-flex items-center gap-3 rounded-full border-2 border-ink px-8 py-4 text-xl font-medium transition-colors hover:border-orange hover:bg-orange"
+            >
+              ¡Get in touch!
+              <span className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
+                ↗
+              </span>
+            </a>
+            <a
+              href={profile.resume}
+              target="_blank"
+              rel="noreferrer"
+              className="text-xl font-medium underline underline-offset-4 transition-colors hover:text-orange"
+            >
+              View resume ↗
+            </a>
+          </motion.div>
         </div>
       </div>
 
