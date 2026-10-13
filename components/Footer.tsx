@@ -23,6 +23,16 @@ export default function Footer() {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                className="underline underline-offset-4 hover:text-orange"
+                href={profile.resume}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume ↗
+              </a>
+            </li>
           </ul>
           <p className="mt-8 text-xl">JA — ©{new Date().getFullYear()}</p>
         </div>

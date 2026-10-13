@@ -4,6 +4,8 @@ export const profile = {
   tagline: "Frontend-focused engineer. Full-stack on AI products.",
   email: "jeremiadamss@gmail.com",
   location: "Lagos, Nigeria (Remote)",
+  resume:
+    "https://drive.google.com/file/d/1yeCAk8yv_l56VHY4MarLzUi0vqGLOS2M/view?usp=sharing",
   socials: [
     { label: "GitHub", href: "https://github.com/jeremiadams" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/jeremiadams" },
