@@ -16,7 +16,7 @@ export default function StickerBadge() {
   const rotate = useTransform(scrollY, (v) => v * 0.12);
 
   return (
-    <div className="pointer-events-none fixed bottom-6 left-5 z-40 size-28 sm:bottom-10 sm:left-10 sm:size-36 drop-shadow-[2px_3px_0_rgba(10,9,8,0.9)]">
+    <div className="pointer-events-none fixed bottom-4 left-4 z-40 size-20 sm:bottom-10 sm:left-10 sm:size-36 drop-shadow-[2px_3px_0_rgba(10,9,8,0.9)]">
       <motion.div style={{ rotate }} className="size-full">
         <div className="size-full animate-[spin_45s_linear_infinite]">
           <svg viewBox="0 0 100 100" className="size-full">
