@@ -15,7 +15,7 @@ export default function Hero() {
       className="flex h-svh flex-col justify-center overflow-hidden px-3"
     >
       <h1
-        className="font-display text-center leading-none tracking-tight text-ink text-[12.5vw]"
+        className="font-display text-center leading-none tracking-tight text-ink text-[17vw] sm:text-[12.5vw]"
         style={{ transform: "scaleY(1.5)" }}
       >
         {letters.map((ch, i) => (
