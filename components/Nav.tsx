@@ -40,25 +40,45 @@ export default function Nav() {
 
   const color = dark ? "text-cream" : "text-ink";
 
+  const linkClass =
+    "pointer-events-auto text-base font-medium underline-offset-4 hover:underline sm:text-lg";
+
   return (
     <nav className="pointer-events-none fixed inset-x-0 top-0 z-50">
       <div
-        className={`flex items-center justify-between px-5 py-5 font-bold transition-colors duration-300 sm:px-10 sm:py-7 ${color}`}
+        className={`flex items-center justify-between px-5 py-5 transition-colors duration-300 sm:px-10 sm:py-7 ${color}`}
       >
-        <Link href="/" className="pointer-events-auto text-base sm:text-lg">
+        {/* desktop: wordmark left */}
+        <Link
+          href="/"
+          className="pointer-events-auto hidden text-lg font-bold sm:block"
+        >
           jeremi.
         </Link>
-        <div className="flex gap-8 sm:gap-14">
+
+        {/* mobile: About + Contact left */}
+        <div className="flex gap-8 sm:hidden">
+          <Link href="/#about" className={linkClass}>
+            About
+          </Link>
+          <Link href="/#contact" className={linkClass}>
+            Contact
+          </Link>
+        </div>
+
+        {/* desktop: all three right */}
+        <div className="hidden gap-14 sm:flex">
           {links.map((l) => (
-            <Link
-              key={l.label}
-              href={l.href}
-              className="pointer-events-auto text-base underline-offset-4 hover:underline sm:text-lg"
-            >
+            <Link key={l.label} href={l.href} className={linkClass}>
               {l.label}
             </Link>
           ))}
         </div>
+
+        {/* mobile: Work right */}
+        <Link href="/#work" className={`${linkClass} sm:hidden`}>
+          Work
+        </Link>
       </div>
     </nav>
   );
